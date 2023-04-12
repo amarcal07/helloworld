@@ -10,13 +10,18 @@ public class HelloController {
 
 	@GetMapping
 	public String hello() {
-		return "<b>Hello turma 62!</b>";
+		return "<b>Hello World</b>";
 	}
 	
 
-	@GetMapping("/nome")
-	public String meuNome() {
-		return "<b>Hello!<br/>Andresa Marcal</b>";
+	@GetMapping("/bsm")
+	public String listaBsm() {
+		return "<b>Responsabilidade Pessoal<br/>Mentalidade de Crescimento<b></br>Orientação para o Futuro</br>Persitência</br>";
    }
 	
+	@GetMapping("/objetivos")
+	public String objetivosAprendizagem() {
+		return "<b>Comunicação<br/>Trabalho em Equipe<b></br>Orientação ao Detalhe</br>";
+		
+	}	
 }
